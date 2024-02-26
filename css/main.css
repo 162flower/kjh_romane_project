@@ -1,0 +1,706 @@
+@charset "utf-8";
+/* 헤더 상단 혜택바 */
+.h_up{
+    height: 40px;
+    background-color: #4b322c;
+}
+.h_up_txt{
+    display: block;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    line-height: 40px;
+}
+
+/* 헤더 퀵영역 */
+#quick{
+    position: fixed;
+    top: 450px;
+    right: 10px;
+    z-index: 800;
+}
+#quick div{
+    width: 50px;
+    background-color: #4b322c;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+#quick div:hover{
+    background-color: #f1582f;
+}
+#quick a, #quick button{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+}
+#quick .chat{
+    background-image: url(../img/spr_01.png);
+    background-position: left -2px top -92px;
+    background-color: #fee500;
+}
+#quick .chat:hover{
+    background-color: #fee500;
+}
+#quick .recent_view{
+    background-image: url(../img/spr_01.png);
+    background-position: left -369px top 2px;    
+}
+#quick .mypage{
+    background-image: url(../img/spr_01.png);
+    background-position: left -273px top 0;
+}
+#quick .go_top{
+    background-image: url(../img/spr_01.png);
+    background-position: left -321px top 0;
+}
+
+
+/* 본문 안전영역 설정*/
+.m_in{
+    position: relative;
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* 본문1 - 배너 */
+.main_01{
+    position: relative;
+    width: 100%;
+    margin-bottom: 150px;
+    background-color: #eae3de;
+}
+.m01_bn{
+    overflow: hidden;
+}
+.m01_bn a{
+    display: block;
+    width: 1440px;
+    margin: 0 auto;
+}
+.m01_bn img{
+    margin-left: -240px;
+}
+
+.prev_btn, .next_btn{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/spr_01.png);
+}
+.prev_btn{
+    position: absolute;
+    top: 312px;
+    left: 50%;
+    margin-left: -700px;
+    background-position: left -85px top -5px;
+    text-indent: -9999px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.next_btn{
+    position: absolute;
+    top: 312px;
+    right: 50%;
+    margin-right: -700px;
+    background-position: left -120px top -5px;
+    text-indent: -9999px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.next_btn:hover, .prev_btn:hover{
+    opacity: 1.0;
+}
+
+.prev_btn1, .next_btn1{
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/spr_01.png);
+}
+.prev_btn1{
+    position: absolute;
+    top: 312px;
+    left: 50%;
+    margin-left: -700px;
+    background-position: left -85px top -5px;
+    text-indent: -9999px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.next_btn1{
+    position: absolute;
+    top: 312px;
+    right: 50%;
+    margin-right: -700px;
+    background-position: left -120px top -5px;
+    text-indent: -9999px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.next_btn1:hover, .prev_btn1:hover{
+    opacity: 1.0;
+}
+
+.swiper_btn01 .btn02_pause, .swiper_btn01 .btn02_play{
+    position: absolute;
+    top: 597px;
+    left: 56%;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: #4b322c;
+    border-radius: 50px;
+    text-indent: -9999px;
+}
+.swiper_btn01 .btn02_play{
+    display: none;
+}
+.swiper_btn01 .btn02_pause::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-image: url(../img/spr_01.png);
+    background-position: left -67px top -17px;
+}
+.swiper_btn01 .btn02_play::after{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    display: block;
+    width: 4px;
+    height: 7px;
+    background-image: url(../img/spr_01.png);
+    background-position: left -46px top -16px;
+}
+.swiper_btn02 ul{
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.swiper_btn02 li{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: 0.6;
+    text-indent: -9999px;
+}
+.swiper_btn02 li.slick-active{
+    opacity: 1.0;
+}
+.swiper_btn02 li:hover{
+    opacity: 1.0;
+}
+
+/* 본문2 오직로마네 세일 */
+.main_02 .m_in{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.m_title{
+    margin-top: 30px;
+    font-size: 22px;
+    line-height: 1.5em;
+}
+.m_title .english{
+    font-family: 'Montserrat', sans-serif;
+}
+.m_title .point{
+    color: rgb(193, 0, 0);
+    margin-bottom: 50px;
+}
+.m_title .percent{
+    text-align: end;
+    font-size: 35px;
+    border-bottom: 4px solid #f1582f;
+}
+.main_02 ul{
+    display: flex;
+}
+.main_02 li{
+    margin-left: 35px;
+}
+.m2_list img:hover{
+    opacity: 0.5;
+}
+.m2_list a{
+    display: block;
+    color: #222;
+}
+.m2_bg{
+    background-color: #222;
+    margin-bottom: 10px;
+}
+.category{
+    font-size: 13px;
+    font-weight: 600;
+}
+.category a{
+    color: #222;
+}
+.category a:hover{
+    color: #f1582f;
+}
+.item_name{
+    color: #777;
+}
+.item_price{
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: line-through;
+    margin-bottom: 7px;
+    color: #999;
+}
+.item_dc{
+    display: flex;
+    justify-content: space-between;
+}
+.item_dc .dc_price{
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+}
+.item_dc .dc_percent{
+    font-size: 20px;
+    font-weight: 500;
+    color: red;
+}
+
+/* 본문3 이미지카테고리 */
+.main_03{
+    position: relative;
+    margin-bottom: 100px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_03 .m_in{
+    position: relative;
+}
+.main_03::before{
+    content: "";
+    position: absolute;
+    top: 85px;
+    left: -170px;
+    display: block;
+    width: 1780px;
+    height: 125px;
+    border-radius: 150px;
+}
+.m3_list{
+    display: flex;
+    justify-content: space-between;
+}
+.m3_list li{
+    position: relative;
+    width: 175px;
+    height: 175px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 300px;
+    background-color: rgba(236, 230, 225, 0.3);
+}
+.m3_list li a{
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: #4b322c;
+}
+.m3_list li span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.m3_list li a:hover::after{
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #f1582f;
+}
+.m3_list li a:hover img{
+    width: 75%;
+}
+.m3_list li img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s;
+}
+/* 본문4 카테고리별 인기상품 */
+.main_04{
+    margin-bottom: 100px;
+}
+.m4_box1{
+    display: flex;
+    margin-bottom: 20px;
+}
+.main_04 .m_title{
+    margin-top: 0;
+    margin-right: 50px;
+}
+.m4_category{
+    display: flex;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 500;
+}
+.m4_category li a{
+    display: inline-block;
+    padding: 5px 15px;
+    padding-top: 8px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: #f5f2f0;
+    color: #222;
+}
+.m4_category .on{
+    background-color: #f1582f;
+    color: #fff;
+}
+.m4_category li a:hover{
+    background-color: #f1582f;
+    color: #fff;
+}
+.m4_bestitem_list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.m4_bestitem_list li{
+    position: relative;
+}
+.m4_best2345 ul{
+    display: flex;
+}
+.m4_best2345 li{
+    margin-left: 13px;
+}
+.m4_best23{
+    margin-bottom: 14px;
+}
+.m4_box2 .num{
+    position: absolute;
+    top: 0;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #4b322c;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.9;
+    z-index: 700;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+}
+.m4_box2 .m4_best45{
+    position: relative;
+}
+.m4_box2 .m4_best45 .num{
+    position: absolute;
+    top: 0;
+}
+.m4_box2 .hidden_txt{
+    position: absolute;
+    top: 0;
+    align-self: center;
+    background-color: rgba(75, 50, 44, 0.3);
+    width: 714px;
+    height: 714px;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+}
+.m4_box2 .hidden_txt:hover{
+    opacity: 1;
+}
+.m4_box2 .hidden_txt *{
+    line-height: 1.5em;
+    color: #fff;
+}
+.hidden_txt_location{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+.hidden_txt .item_name{
+    font-size: 24px;
+}
+.hidden_txt .item_price{
+    font-size: 17px;
+    text-decoration-line: line-through;
+}
+.hidden_txt .item_dc{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.hidden_txt .dc_price{
+    font-size: 28px;
+}
+.hidden_txt .dc_percent{
+    margin-left: 20px;
+    font-size: 25px;
+    color: red;
+}
+.m4_best2345 .hidden_txt{
+    width: 350px;
+    height: 350px;
+}
+.m4_best2345 .item_name{
+    font-size: 17px;
+}
+.m4_best2345 .item_price{
+    font-size: 10px;
+}
+.m4_best2345 .item_dc{
+    display: flex;
+}
+.m4_best2345 .dc_price{
+    font-size: 18px;
+}
+.m4_best2345 .dc_percent{
+    font-size: 16px;
+    color: red;
+}
+
+/* 본문5 혜택배너*/
+.main_05{
+    background-color: #ffe65b;
+    margin-bottom: 100px;
+}
+
+/* 본문6 신상품 */
+.main_06{
+    margin-bottom: 100px;
+}
+.m6_box1{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.m6_box1 .m_title{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.m6_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.m6_list li{
+    position: relative;
+    width: 344px;
+    margin-bottom: 30px;
+}
+.m6_btn{
+    visibility: hidden;
+}
+.m6_list li:hover .m6_btn{
+    visibility: visible;
+}
+.m6_btn .m6_cart{
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    display: block;
+    width: 30px;
+    height: 26px;
+    background-image: url(../img/spr_01.png);
+    background-position: left -426px top -11px;
+    text-indent: -9999px;
+}
+.m6_btn .m6_heart{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    display: block;
+    width: 27px;
+    height: 26px;
+    background-image: url(../img/spr_01.png);
+    background-position: left -233px top -9px;
+    text-indent: -9999px;
+}
+.m6_list li:nth-child(4n){
+    margin-right: 0;
+}
+.m6_list li:hover img{
+    opacity: 0.5;
+}
+.more{
+    display: block;
+    color: #4b322c;
+    padding-right: 12px;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+}
+.more::after{
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 2px;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-right: 2px solid #4b322c;
+    border-bottom: 2px solid #4b322c;
+    transform: rotate(-45deg)
+}
+.more:hover{
+    border-bottom: 2px solid #f1582f;
+}
+.m6_bg{
+    display: block;
+    background-color: #222;
+    margin-bottom: 10px;
+}
+
+/* 본문7 Md's 추천 */
+.main_07{
+    position: relative;
+    margin-bottom: 100px;
+}
+.main_07 .m_title{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.m7li{
+    position: relative;
+    background-color: #fff;
+}
+.m7li.slick-center a{
+    display: flex;
+    width: 800px;
+}
+.m7li.slick-center img{
+    width: 385px;
+    height: auto;
+    object-fit: cover;
+}
+.m7li:hover img{
+    opacity: 0.3;
+}
+.m7li a{
+    display: flex;
+}
+.m7li>a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+}
+.md_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 304px;
+    background-color: #bea9a4;
+    padding: 40px;
+    display: none;
+}
+.m7li.slick-center .md_content{
+    display: block;
+}
+.md_txt{
+    width: 250px;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: rgba(255, 255, 255, 0.7);
+}
+.md_content .md_item_info p{
+    color: rgba(255, 255, 255, 0.7);
+}
+.m7li_02_btn a{
+    position: absolute;
+    top : 240px;
+    display: block;
+    width: 29px;
+    height: 29px;
+    background-image: url(../img/spr_01.png);
+}
+.m7li_02_btn .prev_btn{
+    left: 50%;
+    margin-left: -370px;
+    background-position: left -85px top -5px;
+    text-indent: -9999px;
+    opacity: 0.6;
+}
+.m7li_02_btn a:hover{
+    opacity: 1;
+}
+.m7li_02_btn .next_btn{
+    right: 50%;
+    margin-right: -370px;
+    background-position: left -120px top -5px;
+    text-indent: -9999px;
+    opacity: 0.6;
+}
+.heart{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 35px;
+    height: 29px;
+    background-image: url(../img/spr_01.png);
+    background-position: left -184px top -5px;
+    text-indent: -9999px;
+}
+.m7li.slick-center .heart{
+    display: block;
+}
+
+/* 본문8 장바구니인기상품 */
+.main_08{
+    margin-bottom: 100px;
+}
+.main_08 .m_title{
+    margin-bottom: 20px;
+}
+.m8_list{
+    display: flex;
+}
+.m8_list li{
+    background-color: #fff;
+}
+.m8_list li:hover img{
+    opacity: 0.3;
+}
+
+/* 본문9 프로모션배너 */
+.main_09{
+    position: relative;
+    margin-bottom: 100px;
+}
+.main_09 .swiper_btn02{
+    text-align: center;
+}
+.main_09 .swiper_btn02 ul{
+    top: 200px;
+}
+.main_09 .swiper_btn02 li a{
+    background-color: rgba(148, 139, 131, 0.5);
+}
+.main_09 .swiper_btn02 li a.on{
+    opacity: 1.0;
+}
+.main_09 .swiper_btn02 li a:hover{
+    opacity: 1.0;
+}

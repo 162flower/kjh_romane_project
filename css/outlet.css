@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* 영역1 - 타이틀, 네비 */
+.outlet_title{
+    font-family: 'montserrat';
+    font-size: 35px;
+    text-align: center;
+    color: #4b322c;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.outlet_title::before{
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 155px;
+    height: 145px;
+    background-image: url(../img/bestcate_outlet_img.png);
+}
+
+/* 영역2 - 공지 */
+.outlet_box2{
+    margin-bottom: 50px;
+}
+.outlet_box2 .m_in{
+    background-image: url(../img/bg01.jpg);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.outlet_txt_title{
+    font-size: 60px;
+    line-height: 2em;
+    color: #f1582f;
+}
+.outlet_txt_txt{
+    font-size: 20px;
+    line-height: 2em;
+}
+
+/* 영역3 - 할인율 선택 */
+.outlet_category{
+    margin-bottom: 30px;
+}
+.outlet_cate_list{
+    display: flex;
+    justify-content: center;
+}
+.outlet_cate_list a{
+    display: inline-block;
+    padding: 10px 20px;
+    padding-top: 12px;
+    border-radius: 20px;
+    background-color: #f5f2f0;
+    color: #222;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.outlet_cate_list .on a{
+    background-color: #f1582f;
+    font-weight: 500;
+    color: #fff;
+}
+.outlet_cate_list li a:hover{
+    background-color: #f1582f;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* 영역4 - 상품목록 */
+.no_return_txt{
+    color: #f1582f;
+    margin-top: 8px;
+}
+.soldout.on{
+    display: inline-block;
+    color:  rgba(255, 255, 255, 0.9);
+    padding: 4px 6px;
+    border-radius: 5px;
+    background-color: #f1582f;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#outlet .item_list{
+    position: relative;
+}
+.dc_percent_cir{
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: #f1582f;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+}

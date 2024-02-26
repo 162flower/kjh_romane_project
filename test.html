@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="css/slick.css">
+</head>
+<body>
+    <div class="slide">
+        <div><img src="img/MdPick_img01.jpg" alt=""></div>
+        <div><img src="img/MdPick_img02.jpg" alt=""></div>
+        <div><img src="img/MdPick_img03.jpg" alt=""></div>
+        <div><img src="img/MdPick_img03.jpg" alt=""></div>
+        <div><img src="img/MdPick_img03.jpg" alt=""></div>
+        <div><img src="img/MdPick_img03.jpg" alt=""></div>
+    </div>
+    <style>
+        .slide{
+            background-color: burlywood;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+      $('.slide').slick({
+            dots:true,
+            arrows:true,
+            adaptiveHeight:true,
+            centerMode:true,
+            slidesToShow : 3,
+            centerPadding:'200px'
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+@charset "utf-8";
+/* 서브 메인 - 타이틀, 네비*/
+.item_list_title{
+    line-height: 100px;
+    font-size: 35px;
+    text-align: center;
+    color: #4b322c;
+    padding-top: 50px;
+}
+.nav{
+    position: relative;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+.home_link{
+    display: inline-block;
+    background-image: url(../img/spr_01.png);
+    background-position: left -130px top -111px;
+    width: 13px;
+    height: 12px;
+    text-indent: -9999px;
+    padding-right: 20px;
+    line-height: 13px;
+}
+.home_link::after{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-right: 1px solid #222;
+    border-bottom: 1px solid #222;
+    transform: rotate(-45deg);
+}
+
+/* 서브메인 카테고리 */
+.current_category{
+    color: #222;
+}
+.category_detail{
+    border-top: 1px solid #eae3de;
+    border-bottom: 1px solid #eae3de;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+.cate_detail_list{
+    display: flex;
+    justify-content: center;
+}
+.cate_detail_list li a{
+    display: inline-block;
+    padding: 5px 15px;
+    padding-top: 8px;
+    border-radius: 20px;
+    background-color: #f5f2f0;
+    color: #222;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cate_detail_list .on a{
+    background-color: #f1582f;
+    font-weight: 500;
+    color: #fff;
+}
+.cate_detail_list li a:hover{
+    background-color: #f1582f;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* 서브메인 상품정보 */
+.item_info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.total_num{
+    font-size: 18px;
+    font-weight: 500;
+}
+.info_option{
+    display: flex;
+}
+.info_option li{
+    border-right: 1px solid #eae3de;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.info_option li:last-child{
+    border-right: 0;
+}
+.info_option li a{
+    color: #222;
+}
+.info_option .on a{
+    font-weight: 500;
+    color: #f1582f;
+    border-bottom: 2px solid #f1582f;
+}
+
+/* 서브메인 상품목록 */
+.item_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item_list li{
+    position: relative;
+    width: 347px;
+    margin-bottom: 80px;
+}
+.item_list li img{
+    width: 100%;
+    border: 1px solid #eae3de;
+}
+.it_bg{
+    display: block;
+}
+.item_name{
+    font-size: 18px;
+    letter-spacing: -.05em;
+    color: #222;
+    white-space : nowrap;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.itemlist_btn{
+    visibility: hidden;
+}
+.item_list li:hover .itemlist_btn{
+    visibility: visible;
+}
+.itemlist_btn .itl_cart{
+    position: absolute;
+    top: 45%;
+    left: 52%;
+    display: block;
+    width: 30px;
+    height: 26px;
+    background-image: url(../img/spr_01.png);
+    background-position: left -236px top -52px;
+    text-indent: -9999px;
+}
+.itemlist_btn .itl_heart{
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    display: block;
+    width: 27px;
+    height: 26px;
+    background-image: url(../img/spr_01.png);
+    background-position: left -192px top -53px;
+    text-indent: -9999px;
+}
+.item_list li:hover img{
+    opacity: 0.5;
+}
+
+
+/* 서브메인 페이지 버튼 영역 */
+.page_btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.page_btn p{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eae3de;
+    border-right: 0;
+    text-align: center;
+    text-indent: -9999px;
+    line-height: 40px;
+}
+.page_btn .page_num01{
+    text-indent: 0;
+}
+.page_btn p:last-child{
+    border-right: 1px solid #eae3de;
+}
+.page_btn a{
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 800;   
+}
+.first_page{
+    position: relative;
+}
+.first_page::before{
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    content: "";
+    right: 2px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #4b322c;
+    border-bottom: 1px solid #4b322c;
+    transform: rotate(135deg)
+}
+.first_page::after{
+    position: absolute;
+    top: 14px;
+    left: 22px;
+    content: "";
+    right: 2px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #4b322c;
+    border-bottom: 1px solid #4b322c;
+    transform: rotate(135deg)
+}
+.page_prev{
+    position: relative;
+}
+.page_prev::before{
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    content: "";
+    right: 2px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #4b322c;
+    border-bottom: 1px solid #4b322c;
+    transform: rotate(135deg)
+}
+.page_next{
+    position: relative;
+}
+.page_next::before{
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    content: "";
+    right: 2px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #4b322c;
+    border-bottom: 1px solid #4b322c;
+    transform: rotate(-45deg)
+}
+.last_page{
+    position: relative;
+}
+.last_page::before{
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    content: "";
+    right: 2px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #4b322c;
+    border-bottom: 1px solid #4b322c;
+    transform: rotate(-45deg)
+}
+.last_page::after{
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    content: "";
+    right: 2px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #4b322c;
+    border-bottom: 1px solid #4b322c;
+    transform: rotate(-45deg)
+}
+.page_btn .on a{
+    font-weight: 600;
+    text-decoration: underline;
+    color: #f1582f;
+}
